@@ -18,8 +18,10 @@ entity RAT_wrapper is
     Port ( LEDS     : out   STD_LOGIC_VECTOR (7 downto 0);
            DISP_EN  : out STD_LOGIC_VECTOR(3 downto 0);
            SEGMENTS : out STD_LOGIC_VECTOR(7 downto 0);
+           NOTE_OUT : out std_logic;
            INT      : in STD_LOGIC;
            SWITCHES : in    STD_LOGIC_VECTOR (7 downto 0);
+           KEYPAD   : in STD_LOGIC_VECTOR (7 downto 0);
            RST      : in    STD_LOGIC;
            CLK      : in    STD_LOGIC);
 end RAT_wrapper;
@@ -31,6 +33,7 @@ architecture Behavioral of RAT_wrapper is
    -- In future labs you can add more port IDs, and you'll have
    -- to add constants here for the mux below
    CONSTANT SWITCHES_ID : STD_LOGIC_VECTOR (7 downto 0) := X"20";
+   CONSTANT KEYPAD_ID : STD_LOGIC_VECTOR(7 downto 0) := X"42";
    -------------------------------------------------------------------------------
    
    -------------------------------------------------------------------------------
@@ -38,7 +41,7 @@ architecture Behavioral of RAT_wrapper is
    -- In future labs you can add more port IDs
    CONSTANT LEDS_ID       : STD_LOGIC_VECTOR (7 downto 0) := X"40";
    CONSTANT SEV_SEG_ID : STD_LOGIC_VECTOR(7 downto 0) := X"81";
-
+   CONSTANT NOTE_ID       : STD_LOGIC_VECTOR(7 downto 0) := x"82";
    -------------------------------------------------------------------------------
 
    -- Declare RAT_CPU ------------------------------------------------------------
@@ -58,6 +61,11 @@ architecture Behavioral of RAT_wrapper is
                 DISP_EN : out std_logic_vector(3 downto 0);
                 SEGMENTS : out std_logic_vector(7 downto 0));
    end component;
+   component Speaker_Driver is
+       Port ( CLK_IN : in STD_LOGIC;
+              NOTE : in STD_LOGIC_VECTOR (7 downto 0);
+              CLK_OUT : out STD_LOGIC);
+   end component;
    
    component db_1shot_FSM is
        Port ( A    : in STD_LOGIC;
@@ -75,7 +83,8 @@ architecture Behavioral of RAT_wrapper is
    -- Register definitions for output devices ------------------------------------
    -- add signals for any added outputs
    signal r_LEDS        : std_logic_vector (7 downto 0);
-   signal r_SEV_SEG        : std_logic_vector (7 downto 0);
+   signal r_SEV_SEG     : std_logic_vector (7 downto 0);
+   signal r_NOTE        : std_logic_vector (7 downto 0);
    -------------------------------------------------------------------------------
 
 begin
@@ -105,7 +114,10 @@ begin
               CLK => CLK,
               SEGMENTS => SEGMENTS,
               DISP_EN => DISP_EN);
-   
+   speaker: Speaker_Driver port map(
+              CLK_IN => CLK,
+              NOTE => r_NOTE,
+              CLK_OUT => NOTE_OUT);
    db: db_1shot_FSM port map(
               A => INT,
               CLK => s_clk_sig,
@@ -118,6 +130,8 @@ begin
    begin
       if (s_port_id = SWITCHES_ID) then
          s_input_port <= SWITCHES;
+      elsif(s_port_id = KEYPAD_ID) then
+         s_input_port <= KEYPAD;
       else
          s_input_port <= x"00";
       end if;
@@ -140,6 +154,8 @@ begin
                r_LEDS <= s_output_port;
             elsif(s_port_id = SEV_SEG_ID) then
                r_SEV_SEG <= s_output_port;
+            elsif(s_port_id = NOTE_ID) then
+               r_NOTE <= s_output_port;
             end if;
            
          end if;
@@ -150,5 +166,6 @@ begin
    -- Register Interface Assignments ---------------------------------------------
    -- add all outputs that you added to this design
    LEDS <= r_LEDS;
+
 
 end Behavioral;
