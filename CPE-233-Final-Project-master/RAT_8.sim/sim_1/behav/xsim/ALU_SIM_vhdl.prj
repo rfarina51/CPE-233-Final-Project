@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RAT_6_2017.srcs/sources_1/imports/sources_1/imports/cpe233/ALU_1/ALU_1.srcs/sources_1/imports/new/ALU.vhd" \
+"../../../../../../ALU_SIM.vhd" \
+
+# Do not sort compile order
+nosort

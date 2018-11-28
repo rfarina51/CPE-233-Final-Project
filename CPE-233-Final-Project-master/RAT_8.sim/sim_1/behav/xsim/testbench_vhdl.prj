@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/imports/cpe233/ALU_1/ALU_1.srcs/sources_1/imports/new/ALU.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/new/ALU_MUX.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/imports/cpe233/RAT5/ControlUnit/ControlUnit.srcs/sources_1/new/ControlUnit.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/new/FLAGS.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/imports/cpe233/RAT2/RAT2/RAT2.srcs/sources_1/new/MUX24.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/imports/cpe233/RAT2/RAT2/RAT2.srcs/sources_1/new/PC.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/new/PC_and_MUX.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/new/RAT_MCU.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/new/RAT_WRAPPER.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/new/REG_MUX.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/sources_1/new/Register_File.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/new/Scratch_DIN_MUX.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/new/Scratch_MUX.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/new/Scratch_RAM.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/new/Stack_Pointer.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/test2a/prog_rom.vhd" \
+"../../../../RAT_7_1.srcs/sources_1/imports/new/sseg_dec.vhd" \
+"../../../../RAT_7_1.srcs/sim_1/imports/Downloads/testbench.vhd" \
+
+# Do not sort compile order
+nosort

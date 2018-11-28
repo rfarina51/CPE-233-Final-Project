@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Nov 26 18:18:14 2018
+# Process ID: 2580
+# Current directory: F:/Documents/cpe233/finalproject/RAT_8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2808 F:\Documents\cpe233\finalproject\RAT_8\RAT_8.xpr
+# Log file: F:/Documents/cpe233/finalproject/RAT_8/vivado.log
+# Journal file: F:/Documents/cpe233/finalproject/RAT_8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Documents/cpe233/finalproject/RAT_8/RAT_8.xpr
+update_compile_order -fileset sources_1

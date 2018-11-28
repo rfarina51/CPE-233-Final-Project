@@ -1,0 +1,705 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 14848
+License: Customer
+
+Current time: 	Wed Nov 28 09:19:46 PST 2018
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 122 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	rfarina
+User home directory: C:/Users/rfarina
+User working directory: C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/rfarina/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/rfarina/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/rfarina/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/vivado.log
+Vivado journal file location: 	C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/vivado.jou
+Engine tmp dir: 	C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/.Xil/Vivado-14848-RM100B3
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@eelicensing.ee.calpoly.edu
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	204 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 501 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\rfarina\Downloads\CPE-233-Final-Project-master\CPE-233-Final-Project-master\RAT_8.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master' INFO: [Project 1-313] Project file moved from 'F:/Documents/cpe233/finalproject/RAT_8' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 63 MB (+63987kb) [00:00:07]
+// [Engine Memory]: 483 MB (+355322kb) [00:00:07]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 517 MB (+10228kb) [00:00:09]
+// [GUI Memory]: 67 MB (+132kb) [00:00:10]
+// [Engine Memory]: 548 MB (+5261kb) [00:00:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 38 MB. Current time: 11/28/18 9:19:50 AM PST
+// Project name: RAT_8; location: C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 838.945 ; gain = 132.836 
+dismissDialog("Open Project"); // bx (ck)
+// [GUI Memory]: 75 MB (+5401kb) [00:00:15]
+// [Engine Memory]: 577 MB (+1921kb) [00:00:15]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 87 MB (+7968kb) [00:00:18]
+// a (ck): Critical Messages: addNotify
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAT_wrapper(Behavioral) (RAT_WRAPPER.vhd)]", 1); // B (D, ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 8, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 9, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Keypad(Behavioral) (Keypad.vhd)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 10, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, ALU_SIM.vhd]", 11, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/rfarina/ALU_SIM.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 C:/Users/rfarina/ALU_SIM.vhd 
+// HMemoryUtils.trashcanNow. Engine heap size: 597 MB. GUI used memory: 45 MB. Current time: 11/28/18 9:20:09 AM PST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAT_wrapper(Behavioral) (RAT_WRAPPER.vhd), db : db_1shot_FSM(Behavioral) (debounce_one_shot_FSM.vhd)]", 5, true); // B (D, ck) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Keypad(Behavioral) (Keypad.vhd)]", 6, false); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAT_wrapper(Behavioral) (RAT_WRAPPER.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAT_wrapper(Behavioral) (RAT_WRAPPER.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAT_wrapper(Behavioral) (RAT_WRAPPER.vhd)]", 1, true); // B (D, ck) - Node
+selectCodeEditor("RAT_WRAPPER.vhd", 18, 210); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 131, 280); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 35, 230); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 23, 210); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 139, 280); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 118, 281); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 158, 260); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 281, 265); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 117, 280); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 131, 284); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 277, 340); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 212, 342); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 250, 344); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 231, 254); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 343, 277); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 275, 334); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 165, 238); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 139, 245); // ce (w, ck)
+// [Engine Memory]: 611 MB (+4470kb) [00:01:15]
+selectCodeEditor("RAT_WRAPPER.vhd", 125, 259); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 117, 321); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 117, 317); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 284, 315); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 130, 318); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 145, 312); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 140, 300); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 161, 283); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 158, 267); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 131, 267); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 117, 267); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 181, 221); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 203, 275); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 262, 258); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("RAT_WRAPPER.vhd", 303, 305); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 119, 297); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 190, 303); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 253, 301); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 201, 291); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 270, 293); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 77, 292); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 246, 367); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 52, 303); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Keypad(Behavioral) (Keypad.vhd)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Keypad(Behavioral) (Keypad.vhd)]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Keypad.vhd", 236, 130); // ce (w, ck)
+typeControlKey((HResource) null, "Keypad.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAT_WRAPPER.vhd", 1); // k (j, ck)
+typeControlKey((HResource) null, "RAT_WRAPPER.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 261, 384); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 127, 334); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 100, 330); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 94, 350); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 101, 366); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 97, 381); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 300, 387); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 138, 281); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 386, 351); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 116, 347); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 187, 319); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 255, 346); // ce (w, ck)
+// [GUI Memory]: 93 MB (+2399kb) [00:03:46]
+// Elapsed time: 60 seconds
+selectCodeEditor("RAT_WRAPPER.vhd", 232, 145); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 255, 115); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 251, 149); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 275, 119); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 245, 226); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 157, 417); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 260, 346); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 215, 385); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 127, 380); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 223, 380); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 213, 380); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 218, 384); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 227, 387); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 222, 387); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 271, 387); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("RAT_WRAPPER.vhd", 206, 360); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 119, 245); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 108, 245); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 217, 383); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("RAT_WRAPPER.vhd", 141, 278); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 135, 189); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 403, 195); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("RAT_WRAPPER.vhd", 381, 331); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 225, 147); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 161, 170); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 146, 158); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 226, 294); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 213, 233); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 209, 233); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 198, 228); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 111, 317); // ce (w, ck)
+// [GUI Memory]: 98 MB (+539kb) [00:05:51]
+selectCodeEditor("RAT_WRAPPER.vhd", 233, 181); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("RAT_WRAPPER.vhd", 262, 241); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 246, 222); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 265, 165); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 253, 162); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 272, 354); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 270, 356); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 205, 366); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 316, 351); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 269, 283); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 316, 282); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 307, 315); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 165, 350); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 160, 352); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 156, 352, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("RAT_WRAPPER.vhd", 156, 352); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 282, 346); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 146, 412); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 278, 385); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 251, 385); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 167, 413); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 281, 241); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 200, 298); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, db_1shot_FSM(Behavioral) (debounce_one_shot_FSM.vhd)]", 2, true); // B (D, ck) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("RAT_WRAPPER.vhd", 161, 287); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 451, 278); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 229, 235); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 253, 244); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 282, 245); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Nov 28 09:27:04 2018] Launched synth_1... Run output will be captured here: C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// [GUI Memory]: 105 MB (+2068kb) [00:07:48]
+// Elapsed time: 33 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAT_wrapper(Behavioral) (RAT_WRAPPER.vhd)]", 1); // B (D, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 266, 192); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 203ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: RAT_wrapper 
+// HMemoryUtils.trashcanNow. Engine heap size: 706 MB. GUI used memory: 48 MB. Current time: 11/28/18 9:27:54 AM PST
+// [Engine Memory]: 706 MB (+68325kb) [00:08:15]
+// TclEventType: ELABORATE_FINISH
+// [Engine Memory]: 859 MB (+122723kb) [00:08:20]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 1,005 MB (+108156kb) [00:08:25]
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,006 MB. GUI used memory: 47 MB. Current time: 11/28/18 9:28:04 AM PST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,081 MB (+27570kb) [00:08:26]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 977.441 ; gain = 100.500 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'RAT_wrapper' (20#1) [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/sources_1/new/RAT_WRAPPER.vhd:30] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.957 ; gain = 152.016 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1028.957 ; gain = 152.016 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1028.957 ; gain = 152.016 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/constrs_1/imports/Downloads/Basys3_constraints.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/constrs_1/imports/Downloads/Basys3_constraints.xdc] 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1363.641 ; gain = 486.699 
+// Tcl Message: 70 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1363.641 ; gain = 486.699 
+// 'dP' command handler elapsed time: 16 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// PAPropertyPanels.initPanels (CLK) elapsed time: 0.2s
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAT_WRAPPER.vhd", 2); // k (j, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 129, 315); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 235, 318); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 256, 311); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 209, 348); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 151, 351); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 203, 311); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 246, 301); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, ck)
+// Schematic: addNotify
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAT_WRAPPER.vhd", 2); // k (j, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 196, 244); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 135, 247); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 190, 244); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 219, 249); // ce (w, ck)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 196, 266); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 211, 259); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 210, 247); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 219, 269); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 245, 284); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 234, 285); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 246, 285); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 222, 294); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 302, 316); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 235, 289); // ce (w, ck)
+selectCodeEditor("RAT_WRAPPER.vhd", 271, 315); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bx (ck):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1363.641 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// [Engine Memory]: 1,157 MB (+22606kb) [00:09:59]
+// [GUI Memory]: 120 MB (+9991kb) [00:10:00]
+// Engine heap size: 1,157 MB. GUI used memory: 56 MB. Current time: 11/28/18 9:29:39 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,157 MB. GUI used memory: 56 MB. Current time: 11/28/18 9:29:39 AM PST
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'RAT_wrapper' (20#1) [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/sources_1/new/RAT_WRAPPER.vhd:30] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1404.082 ; gain = 40.441 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1404.082 ; gain = 40.441 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1404.082 ; gain = 40.441 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,157 MB. GUI used memory: 52 MB. Current time: 11/28/18 9:29:41 AM PST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/constrs_1/imports/Downloads/Basys3_constraints.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/constrs_1/imports/Downloads/Basys3_constraints.xdc] 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1404.082 ; gain = 40.441 
+dismissDialog("Reloading"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, ck)
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[RAT_wrapper, speaker (Speaker_Driver)]", 5, false); // aW (O, ck)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[RAT_wrapper, key (Keypad)]", 4); // aW (O, ck)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[RAT_wrapper, key (Keypad)]", 4); // aW (O, ck)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[RAT_wrapper, speaker (Speaker_Driver)]", 5, false, false, false, false, true, false); // aW (O, ck) - Popup Trigger
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[RAT_wrapper, speaker (Speaker_Driver)]", 5, false); // aW (O, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAT_WRAPPER.vhd", 2); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAT_wrapper(Behavioral) (RAT_WRAPPER.vhd), speaker : Speaker_Driver(Behavioral) (Speaker_Driver.vhd)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RAT_wrapper(Behavioral) (RAT_WRAPPER.vhd), speaker : Speaker_Driver(Behavioral) (Speaker_Driver.vhd)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Speaker_Driver.vhd", 119, 422); // ce (w, ck)
+// Elapsed time: 70 seconds
+typeControlKey((HResource) null, "Speaker_Driver.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 118, 308); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 242, 469); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 145, 334); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 112, 269); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 65, 214); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 96, 120); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 54, 107); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 59, 125); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 77, 94); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 85, 79); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 85, 79, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Speaker_Driver.vhd", 89, 71); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 89, 71, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Speaker_Driver.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 62, 147); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 62, 147, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Speaker_Driver.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 249, 174); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 249, 174, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Speaker_Driver.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 179, 196); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 178, 219); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 35, 282); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 82, 287); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 84, 220); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 100, 219); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 18, 214); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 29, 193); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 150, 448); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 46, 203); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 100, 202); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 141, 242); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 519, 250); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 91, 275); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 88, 266); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 65, 202); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 16, 200); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 87, 312); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 95, 228); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 142, 280); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 85, 385); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 98, 423); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 129, 369); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 87, 365); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 83, 404); // ce (w, ck)
+selectCodeEditor("Speaker_Driver.vhd", 145, 414); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1404.082 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,172 MB. GUI used memory: 59 MB. Current time: 11/28/18 9:33:00 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,172 MB. GUI used memory: 59 MB. Current time: 11/28/18 9:33:00 AM PST
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'RAT_wrapper' (20#1) [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/sources_1/new/RAT_WRAPPER.vhd:30] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1417.176 ; gain = 13.094 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1417.176 ; gain = 13.094 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1417.176 ; gain = 13.094 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,172 MB. GUI used memory: 88 MB. Current time: 11/28/18 9:33:01 AM PST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/constrs_1/imports/Downloads/Basys3_constraints.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/rfarina/Downloads/CPE-233-Final-Project-master/CPE-233-Final-Project-master/RAT_8.srcs/constrs_1/imports/Downloads/Basys3_constraints.xdc] 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1449.605 ; gain = 45.523 
+dismissDialog("Reloading"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, ck)
+// Elapsed time: 93 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAT_WRAPPER.vhd", 2); // k (j, ck)
